@@ -1,0 +1,39 @@
+.duyurucuk{
+  font-weight: 200;
+  font-size: 18pt;
+  line-height: 1.3em;
+  margin: 15px 0;
+  margin-top: -3px;
+}
+
+div.mesaj {
+  position: relative;
+  padding: 12px;
+  padding-left: 19px;
+  margin-top: 10px;
+  margin: 30px 210px;
+  box-shadow:0 2px 5px rgba(0,0,0,.3);
+  background: #BBB;
+  
+  -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+       -o-transition: all .5s ease;
+          transition: all .5s ease;
+}
+div.mesaj:hover{
+  box-shadow: 0 15px 20px rgba(10,0,10,.3);
+  -webkit-filter: brightness(110%);
+}
+
+
+div.mesaj.duyuru{background: #d49818 !important;}
+
+
+@media only screen and (max-width: 768px) { 
+  div.mesaj {
+    margin: 30px 48px;
+    padding: 12px;
+    padding-left: 19px;
+  }
+}  

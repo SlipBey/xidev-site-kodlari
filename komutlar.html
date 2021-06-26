@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+
+        <title>XiR - Komutlar</title>
+
+        <!-- Metadata -->
+        <meta charset="utf-8" />
+        <meta name="keywords" content="Discord, Discord.JS, Node.JS, Website, Official, DiscordApp, Bots for Discord, BFD, xirbot, XiR dc bot, MeliL, xdt bot, xir bot, xir discord bot,xir developer team">
+        <meta itemprop="name" content="XiR - Komutlar">
+        <meta itemprop="description" content="XiR Developer Team tarafından geliştirilmiş discord bot">
+        <meta itemprop="image" content="images/xir-brand.png"> 
+
+
+        <!--Opengraph Metadata-->
+
+    <link rel="shortcut icon" href="images/xirlogo.ico">
+    <meta name="theme-color" content="#FFA500">
+    <meta name="author" content="MeliL">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="XiR Developer Team tarafından geliştirilmiş discord bot">
+    <meta property="og:title" content="XiR Developer Team - XiR BoT"/>
+    <meta property="og:url" content="https://xirdevteam.xyz/"/>
+    <meta property="og:site_name" content="Komutlar"/>
+    <meta name="copyright" content="© 2018-2020 XiR - Discord Developer Team">
+    <meta property="og:footer" content="Sitemizi ziyaret etmek istersen çekinme :)"/>
+    <meta property="og:description" content="XiR Discord bot size kolaylık sağlar.Websitemizde bulunan bağlantılardan bizi takip etmeyi unutmayın :)"/>
+    <meta property="og:image" content="/images/xirlogo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+        <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krub|Raleway|Ubuntu">
+        <link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css" media="screen,projection"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/twemoji-awesome.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/extra.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/yukleniyor.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/sosyal_medya.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+     </head>
+    <body class="dark-theme" onload="Yukleme()">
+<div id="yukleniyor">
+<span class="cubesWrapper">
+	<span class="cube"></span>
+	<span class="cube"></span>
+</span>
+</div>
+
+<div style="display:none;" id="icerikler" class="animate-bottom">
+      <main>
+        <div class="ozelgun">
+        <span>XiR Özel Gün </span><a href="#">Tst</a>
+        </div>
+
+		<div class="menucuk">
+		  <navbar class="fixed-top">
+			<div class="nav-fostrap">
+			  <ul>
+				<li><div class="logo"><p><img align="center" src="images/xir-brand.png" title="XiR Logo" alt="" /> XiR DEVELOPER TEAM</p></div></li>
+				<li><a href="/"><i class="lni lni-home"></i> Anasayfa</a></li>
+				<li><a href="komutlar.html" class="aktif"><i class="lni lni-comments"></i> Komutlar</a></li>
+				<li><a href="projeler.html"><i class="lni lni-folder"></i> Projeler</a></li>
+				<li><a href="discord.html"><i class="lni lni-discord"></i> Discord</a></li>
+        <li><a href="https://xirdevteam.blogspot.com" target="_blank"><i class="lni lni-blogger"></i> Blog</a></li>
+        <li><a href="ayin-botu.html" ><i class="lni lni-drupal-original"></i> Ayın Botu</a></li>
+				<li><a href="https://bit.ly/xirdavet" target="_blank"><i class="lni lni-plus"></i> Ekle</a></li>
+			  </ul>
+			</div>
+			<div class="nav-bg-fostrap">
+			  <div class="navbar-fostrap"> <span></span> <span></span> <span></span> </div>
+			  <a href="/" class="title-on-mobile">XiR Developer Team</a>
+			</div>
+		  </navbar> 
+		</div>
+
+
+        <div class="container">
+            
+  <ul class="collapsible popout">
+      <li>
+          <div class="collapsible-header red lighten-1"><i class="twa twa-house-with-garden"></i>Panel Komutları</div>
+          <div class="collapsible-body">
+              
+      <table class="highlight">
+        <p><strong>Varsayılan Önek: <code>x+</code> kullanmak istediğiniz komutun başına ekleyiniz.<br/>Hata veya sorun yaşadığınız komutları sunucumuz üzerinden bize bildirebilirsiniz.</strong></p>
+            <thead>
+              <tr>
+                  <th>Komut</th>
+                  <th>Kullanım</th>
+                  <th>Kısayollar</th>
+                  <th>Açıklama</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Panel</td>
+                <td><code>x+panel</code></td>
+                <td><a class="dropdown-trigger btn red lighten-1" data-target="panelkısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                <td>Ana panel komutlarını görüntülersiniz</td>
+              </tr>
+              <tr>
+                <td>Afk</td>
+                <td><code>x+afk</code></td>
+                <td><a class="btn disabled">Yok</a></td>
+                <td>Birisi sizi etiketlediğinde AFK olduğunuzu söyler</td>
+              </tr>
+              <tr>
+                <td>Hatırlat</td>
+                <td><code>x+hatırlat</code></td>
+                <td><a class="btn disabled">Yok</a></td>
+                <td>Yazdığınız mesajı belirli süre içerisinde size hatırlatır</td>
+              </tr>
+              <tr>
+                <td>Yetkili</td>
+                <td><code>x+yetkili</code></td>
+                <td><a class="dropdown-trigger btn red lighten-1" data-target="yetkilikısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                <td>Yetkili komutlarını gösterir</td>
+              </tr>
+              <tr>
+                <td>Yardım</td>
+                <td><code>x+yardım</code></td>
+                <td><a class="dropdown-trigger btn red lighten-1" data-target="yardım1kısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                <td>Yardım 1 komutlarını gösterir</td>
+              </tr>
+
+                <tr>
+                <td>Yardım2</td>
+                <td><code>x+yardım2</code></td>
+                <td><a class="dropdown-trigger btn red lighten-1" data-target="yardım2kısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                <td>Yardım 2 komutlarını gösterir</td>
+              </tr>
+      
+              <tr>
+                <td>Yardım3</td>
+                <td><code>x+yardım3</code></td>
+                <td><a class="dropdown-trigger btn red lighten-1" data-target="yardım3kısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                <td>Yardım 3 komutlarını gösterir</td>
+              </tr>
+
+              <tr>
+                <td>Site</td>
+                <td><code>x+website</code></td>
+                <td><a class="dropdown-trigger btn red lighten-1" data-target="websitekısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                <td>XiR Dev. Team'a ait website linklerini gösterir</td>
+              </tr>
+
+              <tr>
+                <td>Yapımcım</td>
+                <td><code>x+yapımcım</code></td>
+                <td><a class="dropdown-trigger btn red lighten-1" data-target="yapımcımkısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                <td>Botun yapımcısını gösterir</td>
+              </tr>
+
+              <tr>
+                <td>Canlıdestek</td>
+                <td><code>x+canlıstestek</code></td>
+                <td><a class="btn disabled">Yok</a></td>
+                <td>Canlı Destek Tablebi Oluşturur</td>
+              </tr>
+
+              <tr>
+                <td>İstatistik</td>
+                <td><code>x+istatistik</code></td>
+                <td><a class="dropdown-trigger btn red lighten-1" data-target="botikısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                <td>Botun istatistiklerini gösterir</td>
+              </tr>
+
+              <tr>
+                <td>Bot Davet</td>
+                <td><code>x+botdavet</code></td>
+                <td><a class="dropdown-trigger btn red lighten-1" data-target="botdavetkısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                <td>Botun davet linkini gönderir</td>
+              </tr>
+
+              <tr>
+                <td>Bot Sunucu</td>
+                <td><code>x+botsunucu</code></td>
+                <td><a class="btn disabled">Yok</a></td>
+                <td>Botun sunucusunu gönderir</td>
+              </tr>
+
+
+            </tbody>
+          </table>
+          </div>
+        </li>
+        <li>
+            <div class="collapsible-header red lighten-1"><i class="twa twa-hugging-face"></i> Yardım Komutları</div>
+            <div class="collapsible-body">
+                
+        <table class="highlight">
+        <p><strong>Varsayılan Önek: <code>x+</code> kullanmak istediğiniz komutun başına ekleyiniz.<br/>Hata veya sorun yaşadığınız komutları sunucumuz üzerinden bize bildirebilirsiniz.</strong></p>
+              <thead>
+                <tr>
+                    <th>Komut</th>
+                    <th>Kullanım</th>
+                    <th>Kısayollar</th>
+                    <th>Açıklama</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ekran Resmi</td>
+                  <td><code>x+ekranresmi</code></td>
+                  <td><a class="dropdown-trigger btn red lighten-1" data-target="ekranresmikısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                  <td>Belirttiğiniz sitenin ekran görüntüsünü alırsınız</td>
+                </tr>
+                <tr>
+                  <td>Gif</td>
+                  <td><code>x+gif</code></td>
+                  <td><a class="btn disabled">Yok</a></td>
+                  <td>Tenor sitesi üzerinden gif aratırsınız</td>
+                </tr>
+                <tr>
+                  <td>Aşk Ölçer</td>
+                  <td><code>x+aşkölçer</code></td>
+                  <td><a class="btn disabled">Yok</a></td>
+                  <td>Etiketlediğin kişi ile aşkını ölçer :D</td>
+                </tr>
+                <tr>
+                  <td>Atasözü</td>
+                  <td><code>x+atasözü</code></td>
+                  <td><a class="btn disabled">Yok</a></td>
+                  <td>Atasözlerimizi atar</td>
+                </tr>
+                <tr>
+                  <td>Avatar</td>
+                  <td><code>x+avatar</code></td>
+                  <td><a class="dropdown-trigger btn red lighten-1" data-target="avatarkısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                  <td>Avatarınızı gösterir etiketlerseniz ise etiketlediğiniz kişinin avatarını gösterir</td>
+                </tr>
+                <tr>
+                  <td>Hava</td>
+                  <td><code>x+hava</code></td>
+                  <td><a class="btn disabled">Yok</a></td>
+                  <td>Belirttiğiniz bölgenin hava durumunu gösterir.</td>
+                </tr>
+                <tr>
+                  <td>Emoji Yazı</td>
+                  <td><code>x+emojiyazı</code></td>
+                  <td><a class="btn disabled">Yok</a></td>
+                  <td>Mesajınızı emoji haline getirir</td>
+                </tr>
+                <tr>
+                  <td>Hesapla</td>
+                  <td><code>x+hesapla</code></td>
+                  <td><a class="btn disabled">Yok</a></td>
+                  <td>İşlem yaparsınız</td>
+                </tr>
+                <tr>
+                  <td>Kullanıcı Bilgim</td>
+                  <td><code>x+kbilgim</code></td>
+                  <td><a class="dropdown-trigger btn red lighten-1" data-target="kullanıcıkısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                  <td>Kullanıcı istatistiklerini gösterir</td>
+                </tr>
+                <tr>
+                  <td>Mesaj Döndür</td>
+                  <td><code>x+mesajdöndür</code></td>
+                  <td><a class="btn disabled">Yok</a></td>
+                  <td>Mesajınızı tersten yazar</td>
+                </tr>
+                <tr>
+                  <td>Sunucu Resim</td>
+                  <td><code>x+sunucuresim</code></td>
+                  <td><a class="btn disabled">Yok</a></td>
+                  <td>Sunucunun resmini görüntülersiniz.</td>
+                </tr>
+
+                  <tr>
+                  <td>Slot</td>
+                  <td><code>x+slot</code></td>
+                  <td><a class="btn disabled">Yok</a></td>
+                  <td>Slot oyunu oynatır</td>
+                </tr>
+
+                  <tr>
+                  <td>Ters Renk</td>
+                  <td><code>x+tersrenk</code></td>
+                  <td><a class="btn disabled">Yok</a></td>
+                  <td>Avatarın renklerini ters çevirir</td>
+                </tr>
+
+                  <tr>
+                  <td>Şifre</td>
+                  <td><code>x+şifre</code></td>
+                  <td><a class="btn disabled">Yok</a></td>
+                  <td>Rastgele bir şifre oluşturur</td>
+                </tr>
+
+                  <tr>
+                  <td>Sunucu Bilgi</td>
+                  <td><code>x+sunucu</code></td>
+                  <td><a class="btn disabled">Yok</a></td>
+                  <td>Komutu kullandığınız sunucu hakkında bilgi alırsınız</td>
+                </tr>
+
+                  <tr>
+                  <td>Efkar</td>
+                  <td><code>x+efkar</code></td>
+                  <td><a class="btn disabled">Yok</a></td>
+                  <td>E F K A R L A N D I N I Z :d</td>
+                </tr>
+
+              </tbody>
+              </table>
+              </div>
+          </li>
+          <li>
+              <div class="collapsible-header red lighten-1"><i class="twa twa-construction-worker"></i> Yardım 2 Komutları</div>
+              <div class="collapsible-body">
+                  
+          <table class="highlight">
+        <p><strong>Varsayılan Önek: <code>x+</code> kullanmak istediğiniz komutun başına ekleyiniz.<br/>Hata veya sorun yaşadığınız komutları sunucumuz üzerinden bize bildirebilirsiniz.</strong></p>
+                <thead>
+                  <tr>
+                      <th>Komut</th>
+                      <th>Kullanım</th>
+                      <th>Kısayollar</th>
+                      <th>Açıklama</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ascıı</td>
+                    <td><code>x+asci</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Yazdığınız yazıyı ASCII formatına dönüştürüp gönderir</td>
+                  </tr>
+                  <tr>
+                    <td>Çeviri</td>
+                    <td><code>x+çeviri</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Çeviri yapmanızı sağlar</td>
+                  </tr>
+                  <tr>
+                    <td>Csgo</td>
+                    <td><code>x+csgo</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Csgo istatistiklerinizi gösterir</td>
+                  </tr>
+                  <tr>
+                    <td>Fortnite</td>
+                    <td><code>x+fortnite</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Fortnite Başarımlarını Gösterir</td>
+                  </tr>
+                  <tr>
+                    <td>Espri</td>
+                    <td><code>x+espri</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Rastgele espri mesajı gönderir</td>
+                  </tr>
+                  <tr>
+                    <td>Rol Bilgi</td>
+                    <td><code>x+rolbilgi</code></td>
+                    <td><a class="dropdown-trigger btn red lighten-1" data-target="rolbilgikısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                    <td>Rol hakkında bilgi verir</td>
+                  </tr>
+                  <tr>
+                    <td>Steam</td>
+                    <td><code>x+steam</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Steam'deki oyun hakkında bilgi alırsınız</td>
+                  </tr>
+                  <tr>
+                    <td>Google</td>
+                    <td><code>x+google</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Google'da arama yaparsınız</td>
+                  </tr>
+                  <tr>
+                    <td>Kısalt</td>
+                    <td><code>x+kısalt</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Link kısaltırsınız.</td>
+                  </tr>
+                  <tr>
+                    <td>Spotify</td>
+                    <td><code>x+spotify</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Spotify'da dinlediğiniz şarkı hakkında bilgi verir</td>
+                  </tr>
+                  <tr>
+                    <td>Npm</td>
+                    <td><code>x+npm</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Npm modülü hakkında bilgi verir</td>
+                  </tr>
+                  <tr>
+                    <td>İmdb</td>
+                    <td><code>x+imdb</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>İmdb sitesinde film veya dizi aratırsınız</td>
+                  </tr>
+                  <tr>
+                    <td>Twitch</td>
+                    <td><code>x+twitch</code></td>
+                    <td><a class="dropdown-trigger btn red lighten-1" data-target="twitchkısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                    <td>twitch kanalı hakkında bilgi verir</td>
+                  </tr>
+                  <tr>
+                    <td>Art</td>
+                    <td><code>x+art</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Rastgele çizim resimleri gönderir</td>
+                  </tr>
+                  <tr>
+                    <td>Github</td>
+                    <td><code>x+github</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Githubda arama yaparsınız. Projeleri inceleyip indirebilirsiniz</td>
+                  </tr>
+             
+                    
+                </tbody>
+                </table>
+                </div>
+            </li>
+
+          <li>
+              <div class="collapsible-header red lighten-1"><i class="twa twa-person-in-tuxedo"></i> Yardım 3 Komutları</div>
+              <div class="collapsible-body">
+                  
+          <table class="highlight">
+        <p><strong>Varsayılan Önek: <code>x+</code> kullanmak istediğiniz komutun başına ekleyiniz.<br/>Hata veya sorun yaşadığınız komutları sunucumuz üzerinden bize bildirebilirsiniz.</strong></p>
+                <thead>
+                  <tr>
+                      <th>Komut</th>
+                      <th>Kullanım</th>
+                      <th>Kısayollar</th>
+                      <th>Açıklama</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Rip</td>
+                    <td><code>x+rip</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Avatarınızı mezarın başına koyar :)</td>
+                  </tr>
+                  <tr>
+                    <td>Sunucu Yetkileri</td>
+                    <td><code>x+kyetki</code></td>
+                    <td><a class="dropdown-trigger btn red lighten-1" data-target="sunucuyetkikısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                    <td>Sunucu'daki izinlerinizi gösterir</td>
+                  </tr>
+                  <tr>
+                    <td>Bulanıklaştır</td>
+                    <td><code>x+bulanıklaştır</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Avatarınızın bulanıklaştırılmış halini gösterir.</td>
+                  </tr>
+                  <tr>
+                    <td>Tabela</td>
+                    <td><code>x+tabela</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Pankart'a yazı yazarsınız</td>
+                  </tr>
+             
+                  <tr>
+                    <td>Battlefield</td>
+                    <td><code>x+bf</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Battlefield hesapları hakkında bilgi alırsınız</td>
+                  </tr>
+                    
+                  <tr>
+                    <td>Sunucu Emojleri</td>
+                    <td><code>x+semoji</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Sunucudaki emojileri görüntülersiniz</td>
+                  </tr>
+
+                  <tr>
+                    <td>Ban sayısı</td>
+                    <td><code>x+banliste</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Sunucudaki kaç kişinin banlandığını gösterir</td>
+                  </tr>
+
+                  <tr>
+                    <td>Üyeler</td>
+                    <td><code>x+üyeler</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Sunucuda bulunan üyeleri gösterir</td>
+                  </tr>
+
+                  <tr>
+                    <td>Durum</td>
+                    <td><code>x+durum</code></td>
+                    <td><a class="btn disabled">Yok</a></td>
+                    <td>Kullanıcı Durumlarını gösterir</td>
+                  </tr>
+
+                  <tr>
+                    <td>Davet Bilgi</td>
+                    <td><code>x+dbilgi</code></td>
+                    <td><a class="dropdown-trigger btn red lighten-1" data-target="dbilgikısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                    <td>Davet bilgilerini gösterir</td>
+                  </tr>
+
+                  <tr>
+                    <td>Durumlar</td>
+                    <td><code>x+durumlar</code></td>
+                    <td><a class="dropdown-trigger btn red lighten-1" data-target="durumlarkısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                    <td>Sunucudaki üyelerin durumlarını resimli olarak gösterir</td>
+                  </tr>
+
+                  <tr>
+                    <td>Döviz</td>
+                    <td><code>x+döviz</code></td>
+                    <td><a class="dropdown-trigger btn red lighten-1" data-target="dövizkısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                    <td>Güncel Döviz kurlarını gösterir</td>
+                  </tr>
+
+                  <tr>
+                    <td>İnstagram</td>
+                    <td><code>x+instagram</code></td>
+                    <td><a class="dropdown-trigger btn red lighten-1" data-target="instakısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                    <td>İnstagram kullanıcı bilgilerini gösterir</td>
+                  </tr>
+
+                  <tr>
+                    <td>Twitter</td>
+                    <td><code>x+twitter</code></td>
+                    <td><a class="dropdown-trigger btn red lighten-1" data-target="twitkısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                    <td>Twitter kullanıcı bilgi komutu</td>
+                  </tr>
+
+                  <tr>
+                    <td>Mixer</td>
+                    <td><code>x+mixer</code></td>
+                    <td><a class="dropdown-trigger btn red lighten-1" data-target="mixerkısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                    <td>Mixer kullanıcı bilgi komutu</td>
+                  </tr>
+
+                  <tr>
+                    <td>Developer Mozilla</td>
+                    <td><code>x+mozilla</code></td>
+                    <td><a class="dropdown-trigger btn red lighten-1" data-target="mozillakısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                    <td>Mozilla'nın geliştirici sitesinden arama yaparsınız</td>
+                  </tr>
+
+                </tbody>
+                </table>
+                </div>
+            </li>
+
+            <li>
+                <div class="collapsible-header red lighten-1"><i class="twa twa-detective"></i> Yetkili Komutları</div>
+                <div class="collapsible-body">
+                    
+            <table class="highlight">
+        <p><strong>Varsayılan Önek: <code>x+</code> kullanmak istediğiniz komutun başına ekleyiniz.<br/>Hata veya sorun yaşadığınız komutları sunucumuz üzerinden bize bildirebilirsiniz.</strong></p>
+                  <thead>
+                    <tr>
+                        <th>Komut</th>
+                        <th>Kullanım</th>
+                        <th>Kısayollar</th>
+                        <th>Açıklama</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Sunucu Mesaj Filtre</span></span></td>
+                      <td><code>x+filtre</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Sunucuya gönderilen mesajları filtreler</td>
+                    </tr>
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Sunucu Toplu Mesaj</span></span></td>
+                      <td><code>x+tmesaj</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Bot üzerinden sunucu da bulunan tüm üyelere mesaj gönderirsiniz</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Ban</span></span></td>
+                      <td><code>x+ban</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>İstediğiniz kişiyi sunucudan yasaklar</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Bot İsim</span></span></td>
+                      <td><code>x+botisim</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Botun sunucudaki ismini değiştirirsiniz</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Ban Kaldır</span></span></td>
+                      <td><code>x+bankaldır</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>İstediğiniz kişinin banını kaldırır.</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Temizle</span></span></td>
+                      <td><code>x+temizle</code></td>
+                      <td><a class="dropdown-trigger btn red lighten-1" data-target="temizlekısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                      <td>Komut kullanılan kanaldaki belirtilen sayı kadar mesaj siler</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Otomatik Rol</span></span></td>
+                      <td><code>x+otorol</code></td>
+                      <td><a class="dropdown-trigger btn red lighten-1" data-target="otorolkısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                      <td>Sunucuya giren kullanıcıya seçtiğiniz rolü otomatik verir</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Otomatik Rol Kapat</span></span></td>
+                      <td><code>x+otorolkapat</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Otomatik rolü kapatır</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Ayarlar</span></span></td>
+                      <td><code>x+ayar</code></td>
+                      <td><a class="dropdown-trigger btn red lighten-1" data-target="ayarlarkısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                      <td>Sunucunuza giren çıkan kişileri gösterir</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Davet</span></span></td>
+                      <td><code>x+davet</code></td>
+                      <td><a class="dropdown-trigger btn red lighten-1" data-target="davetkısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                      <td>Sunucunun davet linkini oluşturur</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Ses Kanal Aç</span></span></td>
+                      <td><code>x+seskanalaç</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Ses kanalı açar</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Yazı Kanal Aç</span></span></td>
+                      <td><code>x+yazıkanalaç</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Yazı kanalı açar</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Kategori oluştur</span></span></td>
+                      <td><code>x+kategoriaç</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Kategori oluşturur</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Kanal Sil</span></span></td>
+                      <td><code>x+ksil</code></td>
+                      <td><a class="dropdown-trigger btn red lighten-1" data-target="kanalsilkısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                      <td>Kanal silersiniz</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Bot Yazı</span></span></td>
+                      <td><code>x+yaz</code></td>
+                      <td><a class="dropdown-trigger btn red lighten-1" data-target="botyazikısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                      <td>Bota yazı yazdırırsınız</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Yavaş Mod</span></span></td>
+                      <td><code>x+yavaşmod</code></td>
+                      <td><a class="dropdown-trigger btn red lighten-1" data-target="yavasmodkısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                      <td>Kanala yazma sınırı (süre) ekler</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Kanal Açıklama</span></span></td>
+                      <td><code>x+kaçıklama</code></td>
+                      <td><a class="dropdown-trigger btn red lighten-1" data-target="kanalacıklamakısayol">Tıkla<i class="material-icons right">arrow_drop_down</i></a></td>
+                      <td>Bulunduğunuz kanalın konusunu(açıklamasını) değiştirir</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Bu komutu kullanabilmek için komutu kullandığınız sunucu da yetkili olmanız gerekmektedir."><i class="twa twa-yetkili"></i> <span style="text-decoration: underline;">Sunucu İsim</span></span></td>
+                      <td><code>x+sunucuisim</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Sunucu ismini Değiştirirsiniz</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header red lighten-1"><i class="twa twa-computer"></i> Sahip Komutları</div>
+                <div class="collapsible-body">
+                    
+            <table class="highlight">
+              <p><strong>Bu kısımda bulunan komutları sadece bot sahibi kullanabilir.Kullanmayı deneseniz bile uyarı mesajı ile karşılaşırsınız.</strong></p>
+                  <thead>
+                    <tr>
+                        <th>Komut</th>
+                        <th>Kullanım</th>
+                        <th>Kısayollar</th>
+                        <th>Açıklama</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="tool" data-tip="Sadece bot sahibi kullanabilir"><i class="twa twa-lock"></i> <span style="text-decoration: underline;">Yeniden Başlat</span></span></td>
+                      <td><code>x+reboot</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Botu yeniden başlatır</td>
+                    </tr>
+                    <tr>
+                      <td><span class="tool" data-tip="Sadece bot sahibi kullanabilir"><i class="twa twa-lock"></i> <span style="text-decoration: underline;">Komut Yeniden Başlat</span></span></td>
+                      <td><code>x+reload</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Komutu yeniden başlatır</td>
+                    </tr>
+                    <tr>
+                      <td><span class="tool" data-tip="Sadece bot sahibi kullanabilir"><i class="twa twa-lock"></i> <span style="text-decoration: underline;">Komut Devre Dışı</span></span></td>
+                      <td><code>x+unload</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Komutu devre dışı bırakır</td>
+                    </tr>
+                    <tr>
+                      <td><span class="tool" data-tip="Sadece bot sahibi kullanabilir"><i class="twa twa-lock"></i> <span style="text-decoration: underline;">Sunucudan Ayrıl</span></span></td>
+                      <td><code>x+ayrıl</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Belirtilen sunucudan bot ayrılır.</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Sadece bot sahibi kullanabilir"><i class="twa twa-lock"></i> <span style="text-decoration: underline;">Bot Durum</span></span></td>
+                      <td><code>x+oynuyor</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Botun durumunu değiştirir.</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Sadece bot sahibi kullanabilir"><i class="twa twa-lock"></i> <span style="text-decoration: underline;">Çevrimiçi</span></span></td>
+                      <td><code>x+online</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Botun durumunu Çevrimiçi yapar.</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Sadece bot sahibi kullanabilir"><i class="twa twa-lock"></i> <span style="text-decoration: underline;">Boşta</span></span></td>
+                      <td><code>x+idle</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Botun durumunu Boşta yapar.</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Sadece bot sahibi kullanabilir"><i class="twa twa-lock"></i> <span style="text-decoration: underline;">Rahatsız Etmeyin</span></span></td>
+                      <td><code>x+dnd</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Botun durumunu Rahatsız Etmeyin yapar.</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Sadece bot sahibi kullanabilir"><i class="twa twa-lock"></i> <span style="text-decoration: underline;">Bot Sunucular</span></span></td>
+                      <td><code>x+sunucular</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Botu ekleyen sunucuların listesini atar.</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Sadece bot sahibi kullanabilir"><i class="twa twa-lock"></i> <span style="text-decoration: underline;">Bot Çıkar</span></span></td>
+                      <td><code>x+botçıkar</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Botu bulunduğun sunucudan çıkarır</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Sadece bot sahibi kullanabilir"><i class="twa twa-lock"></i> <span style="text-decoration: underline;">Komut Dosyası</span></span></td>
+                      <td><code>x+js</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Komut dosyasını gönderir</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Sadece bot sahibi kullanabilir"> <i class="twa twa-lock"></i> <span style="text-decoration: underline;">Mesaj At</span></span></td>
+                      <td><code>x+mesajat</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Kullanıcıya veya belirtilen ID deki kanala mesaj atar</td>
+                    </tr>
+
+                    <tr>
+                      <td><span class="tool" data-tip="Sadece bot sahibi kullanabilir"><i class="twa twa-lock"></i> <span style="text-decoration: underline;">Bot Avatar</span></span></td>
+                      <td><code>x+botavatar</code></td>
+                      <td><a class="btn disabled">Yok</a></td>
+                      <td>Botun avatarını değiştirir</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+                </div>
+              </li>
+      </ul>
+        </div>
+      </main>
+
+
+
+<div class="ayrac" >
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#d49818 !important" fill-opacity="1" d="M0,64L60,64C120,64,240,64,360,96C480,128,600,192,720,224C840,256,960,256,1080,224C1200,192,1320,128,1380,96L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+</div>       
+       <footer class="page-footer red lighten-1">
+  
+            <div class="container">
+              <div class="row">
+
+                <div class="col l6 s12">
+                  <h5 class="white-text">XiR Dev. Team Discord</h5>
+                  <p class="grey-text text-lighten-4"><a href="https://bit.ly/xirdcsunucu" target="_blank"><img src="https://discordapp.com/api/guilds/509839189714665492/embed.png?style=banner1" title="XiR Dev. Team Discord Sunucusu" style="border-radius:10px;" alt=""></a></p>
+                </div>
+      
+  
+
+      
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Tema</h5>
+                  <ul>
+                    <li><div class="switch red lighten-1">
+                          <label>
+                            <i class="material-icons">brightness_2</i>
+                            <input id="theme" type="checkbox">
+                            <span class="lever"></span>
+                            <i class="material-icons">brightness_high</i>
+                          </label>
+                        </div>
+                        <br />
+                        <br />
+                  <h5 class="white-text">XiR</h5>
+                    <a class="footekle btn-1" href="https://bit.ly/xirdavet" target="_blank">Sunucuna Ekle</a>
+                       
+              <a class="grey-text text-lighten-4 right" target="_blank" href="https://github.com/Melil0"><img style="width:25px;" src="images/f-github.svg" alt=""/> </a>
+
+               <a class="grey-text text-lighten-4 right" target="_blank" href="https://bit.ly/xirdcsunucu" ><img style="width:25px;" src="images/f-dc.png" alt=""></a>
+              
+               <a class="grey-text text-lighte-4 right" target="_blank" href="https://youtube.com/c/MeliL" ><img style="width:25px;" src="images/f-yt.png" alt=""></a>
+                 
+               <a class="grey-text text-lighten-4 right" target="_blank" href="https://instagram.com/same.ttt" ><img style="width:25px;" src="images/f-insta.png" alt=""></a>
+                </li> 
+                  </ul> 
+                </div>
+              </div>
+          </div>
+      <div class="footer-copyright">
+            <div class="container">
+            © 2018-2021 XiR Developer Team Design By <a href="https://instagram.com/same.ttt" target="_blank" class="footme" >MeliL</a>
+            <a class="grey-text text-lighten-4 right altlink" href="mailto:info@xirdevteam.xyz,xirdevteam@gmail.com">info@xirdevteam.xyz</a>
+            <a class="grey-text text-lighten-4 right altlink" href="kurallar.html" >Kurallar</a>
+            <a class="grey-text text-lighten-4 right altlink" href="/" >Anasayfa</a>
+            
+            </div>
+          </div>
+          </footer>
+
+          <!-- Dropdowns -->
+            <ul id="panelkısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+p</a></li>
+          </ul>
+          
+          <ul id="yetkilikısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+mod</a></li>
+              <li><a style="color: #1f2224;">x+ymod</a></li>
+              <li><a style="color: #1f2224;">x+staff</a></li>
+          </ul>
+
+          <ul id="yardım1kısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+h</a></li>
+              <li><a style="color: #1f2224;">x+help</a></li>
+              <li><a style="color: #1f2224;">x+y</a></li>
+              <li><a style="color: #1f2224;">x+y1</a></li>
+          </ul>
+        
+          <ul id="yardım2kısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+h2</a></li>
+              <li><a style="color: #1f2224;">x+help2</a></li>
+              <li><a style="color: #1f2224;">x+y2</a></li>
+          </ul>
+
+          <ul id="yardım3kısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+h3</a></li>
+              <li><a style="color: #1f2224;">x+help3</a></li>
+              <li><a style="color: #1f2224;">x+y3</a></li>
+          </ul>
+
+          <ul id="websitekısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+site</a></li>
+              <li><a style="color: #1f2224;">x+botsite</a></li>
+              <li><a style="color: #1f2224;">x+bsite</a></li>
+          </ul>
+
+          <ul id="yapımcımkısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+sahibim</a></li>
+          </ul>
+
+          <ul id="botikısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+botdurum</a></li>
+              <li><a style="color: #1f2224;">x+i</a></li>
+              <li><a style="color: #1f2224;">x+bi</a></li>
+              <li><a style="color: #1f2224;">x+bd</a></li>
+              <li><a style="color: #1f2224;">x+istatistikler</a></li>
+              <li><a style="color: #1f2224;">x+stats</a></li>
+              <li><a style="color: #1f2224;">x+stat</a></li>
+          </ul>
+
+          <ul id="botdavetkısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+botuekle</a></li>
+              <li><a style="color: #1f2224;">x+botinvite</a></li>
+              <li><a style="color: #1f2224;">x+botudavetet</a></li>
+          </ul>
+
+          <ul id="ekranresmikısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+ss</a></li>
+              <li><a style="color: #1f2224;">x+ssal</a></li>
+              <li><a style="color: #1f2224;">x+screenshot</a></li>
+          </ul>
+          
+          <ul id="avatarkısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+avatarım</a></li>
+          </ul>
+
+          <ul id="kullanıcıkısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+kullanıcı</a></li>
+              <li><a style="color: #1f2224;">x+kbilgim</a></li>
+              <li><a style="color: #1f2224;">x+profilim</a></li>
+              <li><a style="color: #1f2224;">x+profil</a></li>
+          </ul>
+
+          <ul id="rolbilgikısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+rolhakkında</a></li>
+              <li><a style="color: #1f2224;">x+rolinfo</a></li>
+          </ul>
+
+          <ul id="twitchkısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+tw</a></li>
+          </ul>
+          <ul id="sunucuyetkikısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+kizin</a></li>
+              <li><a style="color: #1f2224;">x+sunucuyetkileri</a></li>
+              <li><a style="color: #1f2224;">x+syetkilerim</a></li>
+              <li><a style="color: #1f2224;">x+kanalizinleri</a></li>
+          </ul>
+          <ul id="dbilgikısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+davetbilgi</a></li>
+              <li><a style="color: #1f2224;">x+inviteinfo</a></li>
+          </ul>
+          <ul id="durumlarkısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+kdurum</a></li>
+              <li><a style="color: #1f2224;">x+kdurumlar</a></li>
+          </ul>
+          <ul id="dövizkısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+doviz</a></li>
+              <li><a style="color: #1f2224;">x+kur</a></li>
+              <li><a style="color: #1f2224;">x+dövizkur</a></li>
+              <li><a style="color: #1f2224;">x+kuranaliz</a></li>
+              <li><a style="color: #1f2224;">x+kurgetir</a></li>
+              <li><a style="color: #1f2224;">x+dövizanaliz</a></li>
+          </ul>
+
+          <ul id="instakısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+insta</a></li>
+          </ul>
+
+          <ul id="twitkısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+twitterbilgi</a></li>
+              <li><a style="color: #1f2224;">x+twitterinfo</a></li>
+              <li><a style="color: #1f2224;">x+twitteruser</a></li>
+          </ul>
+
+          <ul id="mixerkısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+mixeryayın</a></li>
+          </ul>
+
+          <ul id="mozillakısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+devmozilla</a></li>
+              <li><a style="color: #1f2224;">x+mozilladev</a></li>
+              <li><a style="color: #1f2224;">x+mdn</a></li>
+          </ul>
+
+          <ul id="temizlekısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+sil</a></li>
+              <li><a style="color: #1f2224;">x+clear</a></li>
+          </ul>
+
+          <ul id="otorolkısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+girişrol</a></li>
+          </ul>
+
+          <ul id="ayarlarkısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+ayarlar</a></li>
+          </ul>
+
+          <ul id="davetkısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+create-link</a></li>
+              <li><a style="color: #1f2224;">x+davetoluştur</a></li>
+              <li><a style="color: #1f2224;">x+davetal</a></li>
+          </ul>
+
+          <ul id="kanalsilkısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+kanalsil</a></li>
+          </ul>
+
+          <ul id="botyazikısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+say</a></li>
+              <li><a style="color: #1f2224;">x+söyle</a></li>
+          </ul>
+
+          <ul id="yavasmodkısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+slowmode</a></li>
+              <li><a style="color: #1f2224;">x+yavasmod</a></li>
+              <li><a style="color: #1f2224;">x+yavas-mod</a></li>
+          </ul>
+
+          <ul id="kanalacıklamakısayol" class="dropdown-content">
+              <li><a style="color: #1f2224;">x+kanala</a></li>
+          </ul>
+
+
+<div class="fabs" onclick="toggleBtn()">
+      <div class="action">
+        <i class="lni lni-share" id="add"></i>
+        <i class="lni lni-close" id="remove" style="display: none"></i>
+      </div>
+
+      <div class="sosyal">
+        <a target="_blank" href="https://www.facebook.com/sharer.php?u=https://xirdevteam.xyz&quote=XiR Websitemizi ziyaret etmeyi unutmayın.Websitemizde ve sunucumuzda bir çok discord projesi ve kod paylaşılmaktadır.Hadi sen de aramıza katıl." class="sosyalbtn face">
+        <i class="lni lni-facebook-filled"></i>
+        </a>
+        <a target="_blank" href="https://api.whatsapp.com/send?text=XiR Websitemizi ziyaret etmeyi unutmayın.Websitemizde ve sunucumuzda bir çok discord projesi ve kod paylaşılmaktadır.Hadi sen de aramıza katıl.  https://xirdevteam.xyz" class="sosyalbtn whatsapp">
+        <i class="lni lni-whatsapp"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/share?text=XiR Websitemizi ziyaret etmeyi unutmayın.Websitemizde ve sunucumuzda bir çok discord projesi ve kod paylaşılmaktadır.Hadi sen de aramıza katıl.&url=https://xirdevteam.xyz" class="sosyalbtn twitter">
+        <i class="lni lni-twitter-original"></i>
+        </a>
+        <a target="_blank" href="https://pinterest.com/pin/create/button/?url=xirdevteam.xyz&media=https://xirdevteam.xyz/images/xir-brand.png&description=XiR Websitemizi ziyaret etmeyi unutmayın.Websitemizde ve sunucumuzda bir çok discord projesi ve kod paylaşılmaktadır.Hadi sen de aramıza katıl." class="sosyalbtn pintereset">
+        <i class="lni lni-pinterest"></i>
+        </a>
+      </div>
+    </div>  
+  </div>
+
+          <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+          <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+          <script type="text/javascript" src="assets/js/theme.js"></script>
+          <script type="text/javascript" src="assets/js/loading.js"></script>
+          <script type="text/javascript" src="assets/js/navbar.js"></script>
+          <script type="text/javascript" src="assets/js/sosyal.js"></script>
+          <script type="text/javascript" src="assets/js/yorum.js"></script>        
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+      
+    </body>
+</html>

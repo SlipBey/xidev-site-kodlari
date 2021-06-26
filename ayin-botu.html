@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html itemtype="http://schema.org/Thing" lang="en-US">
+    <head> 
+
+        <title>XiR - Ayın Botu</title>
+
+        <!-- Metadata -->
+        <meta charset="utf-8" />
+        <meta name="keywords" content="Discord, Discord.JS, Node.JS, Website, Official, DiscordApp, Bots for Discord, BFD, xirbot, XiR dc bot, MeliL, xdt bot, xir bot, xir discord bot,xir developer team">
+        <meta itemprop="name" content="XiR - Ayın Botu">
+        <meta itemprop="description" content="XiR Developer Team tarafından geliştirilmiş discord bot">
+        <meta itemprop="image" content="images/xir-brand.png"> 
+
+
+        <!--Opengraph Metadata-->
+
+    <link rel="shortcut icon" href="images/xirlogo.ico">
+    <meta name="theme-color" content="#FFA500">
+    <meta name="author" content="MeliL">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="XiR Developer Team tarafından geliştirilmiş discord bot">
+    <meta property="og:title" content="XiR Developer Team - XiR BoT"/>
+    <meta property="og:url" content="https://xirdevteam.xyz"/>
+    <meta property="og:site_name" content="XiR - Ayın Botu"/>
+    <meta name="copyright" content="© 2018-2020 XiR - Discord Developer Team" >
+    <meta property="og:footer" content="Sitemizi ziyaret etmek istersen çekinme :)"/>
+    <meta property="og:description" content="XiR Discord bot size kolaylık sağlar.Websitemizde bulunan bağlantılardan bizi takip etmeyi unutmayın :)"/>
+    <meta property="og:image" content="images/xirlogo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krub|Raleway|Ubuntu">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css" media="screen,projection"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/twemoji-awesome.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/extra.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/yukleniyor.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/xcord.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/sosyal_medya.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/ayin-botu.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/fancybox.css">
+
+    </head>
+    <body class="dark-theme" onload="Yukleme()">
+<div id="yukleniyor">
+<span class="cubesWrapper">
+	<span class="cube"></span>
+	<span class="cube"></span>
+</span>
+</div>
+
+<div style="display:none;" id="icerikler" class="animate-bottom">
+      <main>
+        <div class="ozelgun">
+        <span>XiR Özel Gün </span><a href="#">Tst</a>
+        </div>
+
+		<div class="menucuk">
+		  <navbar class="fixed-top">
+			<div class="nav-fostrap">
+			  <ul>
+				<li><div class="logo"><p><img align="center" src="images/xir-brand.png" title="XiR Logo" alt="" /> XiR DEVELOPER TEAM</p></div></li>
+				<li><a href="/"><i class="lni lni-home"></i> Anasayfa</a></li>
+				<li><a href="komutlar.html"><i class="lni lni-comments"></i> Komutlar</a></li>
+				<li><a href="projeler.html"><i class="lni lni-folder"></i> Projeler</a></li>
+				<li><a href="discord.html" ><i class="lni lni-discord"></i> Discord</a></li>
+        <li><a href="https://xirdevteam.blogspot.com" target="_blank"><i class="lni lni-blogger"></i> Blog</a></li>
+        <li><a href="ayin-botu.html" class="aktif" ><i class="lni lni-drupal-original"></i> Ayın Botu</a></li>
+				<li><a href="https://bit.ly/xirdavet" target="_blank"><i class="lni lni-plus"></i> Ekle</a></li>
+			  </ul>
+			</div>
+			<div class="nav-bg-fostrap">
+			  <div class="navbar-fostrap"> <span></span> <span></span> <span></span> </div>
+			  <a href="/" class="title-on-mobile">XiR Developer Team</a>
+			</div>
+		  </navbar> 
+		</div>
+
+
+<div class="container">
+  <div class="profile-header">
+    <div class="profile-img">
+      <img src="https://i.hizliresim.com/zoLOwa.png" width="200" alt="Profile Image">
+    </div>
+    <div class="profile-nav-info">
+      <h3 class="user-name">PlusBot</h3>
+      <div class="address">
+        <p id="state" class="state">Eğlence,Genel,Moderasyon,Koruma,Müzik, Komutları Barındıran Bot.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="main-bd">
+    <div class="left-side">
+      <div class="profile-side">
+        <div class="user-bio">
+          <p><b>Prefix:</b> p!</p>
+          <p><b>Dil:</b> Türkçe</p>
+          <p><b>Tür:</b> Eğlence, Genel, Moderasyon, Koruma, Müzik</p>
+          <p><b>Kodlama Dili:</b> discord.js</p>
+          <p><b>Sahibi:</b> <a href="https://discord.com/users/575626408873689118" target="_blank">NotFound#0555</a></p>
+          <p><b>Onaylı mı:</b> Hayır</p>  
+        </div>
+        <div class="profile-btn">
+          <button class="chatbtn" id="chatBtn"><i class="lni lni-discord"></i><a target="_blank" href="https://discord.gg/3uuDCyp" style="text-decoration:none; color:white;"> Discord</a></button>
+          <button class="createbtn" ><i class="lni lni-plus"></i><a target="_blank" href="https://bit.ly/2ZXEgd3" style="text-decoration:none; color:white;"> Ekle</a></button>
+        </div>
+        <div class="profile-btn">
+        <button class="createbtn" ><i class="lni lni-trowel"></i><a target="_blank" href="https://plusbotwebsite.glitch.me/" style="text-decoration:none; color:white;"> Website</a></button>
+        </div>
+        
+      </div>
+
+    </div>
+    <div class="right-side">
+
+      <div class="nav">
+        <ul>
+          <li onclick="tabs(0)" class="user-post active">Hakkında</li>
+		  <li onclick="tabs(1)" class="user-post">Görseller</li>
+        </ul>
+      </div>
+      <div class="profile-body">
+        <div class="profile-posts tab">
+          <h2>Bot Hakkında</h2>
+          <p>
+           PlusBot: Eğlence,Genel,Moderasyon,Koruma,Müzik, Barındıran Bottur Hergün Aktif Komutlar Ekleniyo Destek Vermek İstiyorsan Botu Ekleyip Destek Sunucusuna Gelebilirsin.
+          </p>
+        </div>
+<div class="profile-posts tab">
+      <p class="imglist" style="max-width: 1000px;">
+      <a href="https://i.hizliresim.com/PzH9wA.png" data-fancybox="images">
+      <img src="https://i.hizliresim.com/PzH9wA.png" />
+      </a>
+      <a href="https://i.hizliresim.com/K08bXy.png" data-fancybox="images">
+      <img src="https://i.hizliresim.com/K08bXy.png" />
+      </a>
+      <a href="https://i.hizliresim.com/cxPc7s.png" data-fancybox="images">
+      <img src="https://i.hizliresim.com/cxPc7s.png" />
+      </a>
+      <a href="https://i.hizliresim.com/pRzNyf.png" data-fancybox="images">
+      <img src="https://i.hizliresim.com/pRzNyf.png" />
+      </a>
+      <a href="https://i.hizliresim.com/y3OwdE.png" data-fancybox="images">
+      <img src="https://i.hizliresim.com/y3OwdE.png" />
+      </a>
+      <a href="https://i.hizliresim.com/pj10pR.png" data-fancybox="images">
+      <img src="https://i.hizliresim.com/pj10pR.png" />
+      </a>
+      </p>
+        </div>
+      </div>
+    </div>
+  </div>
+		  </div>
+        </main>
+<div class="ayrac" >
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#d49818 !important" fill-opacity="1" d="M0,64L60,64C120,64,240,64,360,96C480,128,600,192,720,224C840,256,960,256,1080,224C1200,192,1320,128,1380,96L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+</div>       
+       <footer class="page-footer red lighten-1">
+  
+            <div class="container">
+              <div class="row">
+
+                <div class="col l6 s12">
+                  <h5 class="white-text">XiR Dev. Team Discord</h5>
+                  <p class="grey-text text-lighten-4"><a href="https://bit.ly/xirdcsunucu" target="_blank"><img src="https://discordapp.com/api/guilds/509839189714665492/embed.png?style=banner1" title="XiR Dev. Team Discord Sunucusu" style="border-radius:10px;" alt=""></a></p>
+                </div>
+      
+  
+
+      
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Tema</h5>
+                  <ul>
+                    <li><div class="switch red lighten-1">
+                          <label>
+                            <i class="material-icons">brightness_2</i>
+                            <input id="theme" type="checkbox">
+                            <span class="lever"></span>
+                            <i class="material-icons">brightness_high</i>
+                          </label>
+                        </div>
+                        <br />
+                        <br />
+                  <h5 class="white-text">XiR</h5>
+                    <a class="footekle btn-1" href="https://bit.ly/xirdavet" target="_blank">Sunucuna Ekle</a>
+                       
+              <a class="grey-text text-lighten-4 right" target="_blank" href="https://github.com/Melil0"><img style="width:25px;" src="images/f-github.svg" alt="" /> </a>
+
+               <a class="grey-text text-lighten-4 right" target="_blank" href="https://bit.ly/xirdcsunucu" ><img style="width:25px;" src="images/f-dc.png" alt=""></a>
+              
+               <a class="grey-text text-lighte-4 right" target="_blank" href="https://youtube.com/c/MeliL" ><img style="width:25px;" src="images/f-yt.png" alt=""></a>
+                 
+               <a class="grey-text text-lighten-4 right" target="_blank" href="https://instagram.com/same.ttt" ><img style="width:25px;" src="images/f-insta.png" alt=""></a>
+                </li> 
+                  </ul> 
+                </div>
+              </div>
+          </div>
+      <div class="footer-copyright">
+            <div class="container">
+            © 2018-2021 XiR Developer Team Design By <a href="https://instagram.com/same.ttt" target="_blank" class="footme" >MeliL</a>
+            <a class="grey-text text-lighten-4 right altlink" href="mailto:info@xirdevteam.xyz,xirdevteam@gmail.com">info@xirdevteam.xyz</a>
+            <a class="grey-text text-lighten-4 right altlink" href="kurallar.html" >Kurallar</a>
+            <a class="grey-text text-lighten-4 right altlink" href="/" >Anasayfa</a>
+            
+            </div>
+          </div>
+          </footer>
+
+    <div class="fabs" onclick="toggleBtn()">
+      <div class="action">
+        <i class="lni lni-share" id="add"></i>
+        <i class="lni lni-close" id="remove" style="display: none"></i>
+      </div>
+
+      <div class="sosyal">
+        <a target="_blank" href="https://www.facebook.com/sharer.php?u=https://xirdevteam.xyz&quote=XiR Websitemizi ziyaret etmeyi unutmayın.Websitemizde ve sunucumuzda bir çok discord projesi ve kod paylaşılmaktadır.Hadi sen de aramıza katıl." class="sosyalbtn face">
+        <i class="lni lni-facebook-filled"></i>
+        </a>
+        <a target="_blank" href="https://api.whatsapp.com/send?text=XiR Websitemizi ziyaret etmeyi unutmayın.Websitemizde ve sunucumuzda bir çok discord projesi ve kod paylaşılmaktadır.Hadi sen de aramıza katıl.  https://xirdevteam.xyz" class="sosyalbtn whatsapp">
+        <i class="lni lni-whatsapp"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/share?text=XiR Websitemizi ziyaret etmeyi unutmayın.Websitemizde ve sunucumuzda bir çok discord projesi ve kod paylaşılmaktadır.Hadi sen de aramıza katıl.&url=https://xirdevteam.xyz" class="sosyalbtn twitter">
+        <i class="lni lni-twitter-original"></i>
+        </a>
+        <a target="_blank" href="https://pinterest.com/pin/create/button/?url=https://xirdevteam.xyz&media=https://xirdevteam.xyz/images/xir-brand.png&description=XiR Websitemizi ziyaret etmeyi unutmayın.Websitemizde ve sunucumuzda bir çok discord projesi ve kod paylaşılmaktadır.Hadi sen de aramıza katıl." class="sosyalbtn pintereset">
+        <i class="lni lni-pinterest"></i>
+        </a>
+      </div>
+    </div> 
+</div> 
+
+<script type="text/javascript">
+	<!--
+	MyBBFancyBox.setup({
+		clickToEnlarge: "Büyütmek için tıklayın",
+		CLOSE: "Kapat",
+		NEXT: "Sonraki",
+		PREV: "Önceki",
+		ERROR: "İstenen içerik yüklenemiyor. <br/> Lütfen daha sonra tekrar deneyin.",
+		PLAY_START: "Otomatik Oynatmayı Aç",
+		PLAY_STOP: "Otomatik Oynatmayı Kapat",
+		FULL_SCREEN: "Tam Ekran",
+		THUMBS: "Küçük resimler",
+		DOWNLOAD: "İndir",
+		SHARE: "Paylaş",
+		ZOOM: "Yakınlaştır",
+		MINIMIZE: "Minimize",
+	}, 
+      {
+		protect: false,
+		loop: true,
+		infobar: true,
+		arrows: true,
+		thumbs: false,
+		buttons: [ 'slideShow','fullScreen','thumbs','share', 'download','zoom','minimize','close' ],
+		btnTpl: {
+			minimize:
+			'<button data-fancybox-minimize class="fancybox-button fancybox-button--minimise" title="{{MINIMIZE}}"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 445 445"><g fill="#010002"><path d="M440.3 4.7a15.9 15.9 0 0 0-22.5 0L286 136.5V47.7a16 16 0 0 0-31.7 0V175l1.2 6 3.3 5 .1.2h.2l5 3.4 6 1.2h127.2a16 16 0 0 0 0-31.8h-88.8L440.3 27.2a16 16 0 0 0 0-22.5zM180.9 255.5l-6-1.2H47.6a16 16 0 0 0 0 31.8h88.7L4.7 417.8A15.9 15.9 0 1 0 27 440.3L159 308.5v88.8a16 16 0 0 0 31.8 0V270.2l-1.2-6a16 16 0 0 0-8.6-8.7z"/></g></svg></button>'
+		}
+	});
+	// -->
+	</script>
+        <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/theme.js"></script>
+        <script type="text/javascript" src="assets/js/loading.js"></script>
+        <script type="text/javascript" src="assets/js/navbar.js"></script>
+        <script type="text/javascript" src="assets/js/sosyal.js"></script>
+        <script type="text/javascript" src="assets/js/ayin-botu.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+		<script type="text/javascript" src="assets/js/fancybox.js"></script>
+
+    </body>
+</html>
